@@ -16,7 +16,7 @@ namespace ConsoleApp1
             Console.WriteLine("Hello World");
             // call weather api to get today's forecast
             // call weather api to get tomorrow's forecast
-            var content = client.GetStringAsync("http://api.openweathermap.org/data/2.5/weather?q=Lancaster,PA&APPID=fe7e427fa3a74ac8fe2f7e47bb13c4c6").Result;
+            var content = client.GetStringAsync("http://api.openweathermap.org/data/2.5/weather?q=Lancaster&APPID=fe7e427fa3a74ac8fe2f7e47bb13c4c6").Result;
             Console.WriteLine(content);
             Console.ReadLine();
         }
